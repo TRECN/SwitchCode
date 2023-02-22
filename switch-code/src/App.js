@@ -1,10 +1,12 @@
-
-
+import Select from "./component/Select"
+import {BrowserRouter,Routes,Route}from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-      <h1>Hi</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Select/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
