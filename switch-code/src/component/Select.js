@@ -2,20 +2,19 @@ import React from 'react'
 import '../css/Select.css'
 
 export default function Select() {
-  return (
-    <div className='Select'>
-        <div className='content coding '>
-            <a href="">
-                <h1>Coding</h1>
+    return (
+        <div className='Select'>
+            <a href="/coding" className='content'>
+                <div className='coding'>
+                    <h1>Coding</h1>
+                </div>
             </a>
-            
-        </div>
-        <div className='content webDev '>
-            <a href="">
-                <h1>Web Development</h1>
+            <a href="/webdev" className='content'>
+                <div className='webDev'>
+                    <h1>Web Development</h1>
+                </div>
             </a>
-        </div>
 
-    </div>
-  )
+        </div>
+    )
 }
